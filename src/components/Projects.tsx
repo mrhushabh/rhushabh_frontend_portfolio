@@ -19,7 +19,7 @@ const projects = [
         github: 'https://github.com/mrhushabh',
         demo: 'https://node-backend-448822.web.app/search/home',
         video: 'https://www.youtube.com/watch?v=F8raFihjc6c',
-        image: 'https://images.unsplash.com/photo-1611974765270-ca12586343bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1642790551116-18e150f248e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
         id: 2,
@@ -47,7 +47,7 @@ const projects = [
             'Developed a Flutter mobile app for intuitive query input, displaying the generated query, and enabling real-time execution.'
         ],
         tech: ['Python', 'Flask', 'NLP', 'Flutter', 'Dart', 'MySQL', 'MongoDB'],
-        github: 'https://github.com/mrhushabh',
+        github: '',
         demo: '#',
         image: 'https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
@@ -142,37 +142,17 @@ export const Projects = () => {
                             />
                         </div>
 
-                        <div className="space-y-4">
-                            <h5 className="font-semibold text-lg text-white">Key Features</h5>
-                            <ul className="list-disc pl-5 space-y-2 text-gray-300">
-                                {selectedProject.details.map((point, i) => (
-                                    <li key={i} className="leading-relaxed">
-                                        {point}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h5 className="font-semibold text-lg text-white mb-3">Technologies</h5>
-                            <div className="flex flex-wrap gap-2">
-                                {selectedProject.tech.map((t) => (
-                                    <span key={t} className="px-3 py-1 text-xs font-medium bg-teal-500/10 text-teal-300 rounded-full border border-teal-500/20">
-                                        {t}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-
-                        <div className="flex flex-wrap gap-4 pt-4 border-t border-white/10">
-                            <a
-                                href={selectedProject.github}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white font-medium"
-                            >
-                                <Github size={20} /> View Code
-                            </a>
+                        <div className="flex flex-wrap gap-4">
+                            {selectedProject.github && (
+                                <a
+                                    href={selectedProject.github}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white font-medium"
+                                >
+                                    <Github size={20} /> View Code
+                                </a>
+                            )}
 
                             {selectedProject.demo !== '#' && (
                                 <a
@@ -198,6 +178,30 @@ export const Projects = () => {
                                 </a>
                             )}
                         </div>
+
+                        <div className="space-y-4">
+                            <h5 className="font-semibold text-lg text-white">Key Features</h5>
+                            <ul className="list-disc pl-5 space-y-2 text-gray-300">
+                                {selectedProject.details.map((point, i) => (
+                                    <li key={i} className="leading-relaxed">
+                                        {point}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h5 className="font-semibold text-lg text-white mb-3">Technologies</h5>
+                            <div className="flex flex-wrap gap-2">
+                                {selectedProject.tech.map((t) => (
+                                    <span key={t} className="px-3 py-1 text-xs font-medium bg-teal-500/10 text-teal-300 rounded-full border border-teal-500/20">
+                                        {t}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+
                     </div>
                 )}
             </Modal>

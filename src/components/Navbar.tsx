@@ -37,13 +37,13 @@ export const Navbar = () => {
                     animate={{ opacity: 1, x: 0 }}
                     className="hidden md:flex items-center gap-4"
                 >
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                    <a href="https://github.com/mrhushabh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                         <Github size={20} />
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                    <a href="https://www.linkedin.com/in/rhushabh-madurwar/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                         <Linkedin size={20} />
                     </a>
-                    <a href="mailto:hello@example.com" className="text-gray-400 hover:text-white transition-colors">
+                    <a href="mailto:rushmadurwar@gmail.com" className="text-gray-400 hover:text-white transition-colors">
                         <Mail size={20} />
                     </a>
                 </motion.div>
@@ -77,13 +77,13 @@ export const Navbar = () => {
                                 </a>
                             ))}
                             <div className="flex gap-6 mt-4">
-                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                                <a href="https://github.com/mrhushabh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                                     <Github size={20} />
                                 </a>
-                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                                <a href="https://www.linkedin.com/in/rhushabh-madurwar/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                                     <Linkedin size={20} />
                                 </a>
-                                <a href="mailto:hello@example.com" className="text-gray-400 hover:text-white">
+                                <a href="mailto:rushmadurwar@gmail.com" className="text-gray-400 hover:text-white">
                                     <Mail size={20} />
                                 </a>
                             </div>
