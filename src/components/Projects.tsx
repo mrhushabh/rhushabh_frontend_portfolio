@@ -6,7 +6,7 @@ import { Modal } from './Modal';
 const projects = [
     {
         id: 1,
-        title: 'Stock Trading and Digital Wallet iOS/Web App',
+        title: 'StockPlay',
         summary: 'Cross-platform app for stock trading and portfolio analysis with HighCharts visualization.',
         details: [
             'Built a cross-platform stock trading and portfolio analysis app, developing a SwiftUI iOS app and a MERN stack web app.',
@@ -17,7 +17,7 @@ const projects = [
         ],
         tech: ['SwiftUI', 'React', 'Node.js', 'MongoDB', 'GCP', 'MERN Stack'],
         github: 'https://github.com/mrhushabh',
-        demo: 'https://node-backend-448822.web.app/search/home',
+        demo: 'https://stockplay.onrender.com/search',
         video: 'https://www.youtube.com/watch?v=F8raFihjc6c',
         image: 'https://images.unsplash.com/photo-1642790551116-18e150f248e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
