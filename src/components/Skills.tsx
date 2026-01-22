@@ -10,7 +10,7 @@ const skillCategories = [
     {
         title: 'Web & Databases',
         icon: <Database size={24} className="text-teal-400" />,
-        skills: ['React', 'Typescript', 'Firebase', 'Flask', 'Node.js', 'MongoDB', 'MySQL', 'Postgres', 'REST API']
+        skills: ['React', 'Next.js', 'Typescript', 'Firebase', 'Flask', 'Node.js', 'MongoDB', 'MySQL', 'Postgres', 'REST API']
     },
     {
         title: 'Frameworks & Cloud',
