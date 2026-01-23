@@ -64,7 +64,11 @@ const projects = [
         tech: ['React', 'TypeScript', 'Node.js', 'Prisma', 'Tailwind', 'Recharts'],
         github: 'https://github.com/mrhushabh/ApplyFlow',
         demo: 'https://apply-flow-mauve.vercel.app/',
-        image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        credentials: {
+            email: 'demo@example.com',
+            password: 'password'
+        }
     }
 ];
 
@@ -142,40 +146,56 @@ export const Projects = () => {
                             />
                         </div>
 
-                        <div className="flex flex-wrap gap-4">
-                            {selectedProject.github && (
-                                <a
-                                    href={selectedProject.github}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white font-medium"
-                                >
-                                    <Github size={20} /> View Code
-                                </a>
-                            )}
+                        <div className="flex fex-row flex-wrap gap-4 items-center">
+                            <div className="flex flex-wrap gap-4">
+                                {selectedProject.github && (
+                                    <a
+                                        href={selectedProject.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white font-medium"
+                                    >
+                                        <Github size={20} /> View Code
+                                    </a>
+                                )}
 
-                            {selectedProject.demo !== '#' && (
-                                <a
-                                    href={selectedProject.demo}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center gap-2 px-4 py-2 bg-teal-500/20 hover:bg-teal-500/30 text-teal-400 rounded-lg transition-colors font-medium border border-teal-500/20"
-                                >
-                                    <ExternalLink size={20} /> Live Demo
-                                </a>
-                            )}
+                                {selectedProject.demo !== '#' && (
+                                    <a
+                                        href={selectedProject.demo}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 px-4 py-2 bg-teal-500/20 hover:bg-teal-500/30 text-teal-400 rounded-lg transition-colors font-medium border border-teal-500/20"
+                                    >
+                                        <ExternalLink size={20} /> Live Demo
+                                    </a>
+                                )}
+
+                                {/* @ts-ignore */}
+                                {selectedProject.video && (
+                                    /* @ts-ignore */
+                                    <a
+                                        href={selectedProject.video}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 px-4 py-2 bg-red-500/20 hover:bg-red-500/30 text-red-400 rounded-lg transition-colors font-medium border border-red-500/20"
+                                    >
+                                        <Youtube size={20} /> Watch Demo
+                                    </a>
+                                )}
+                            </div>
 
                             {/* @ts-ignore */}
-                            {selectedProject.video && (
+                            {selectedProject.credentials && (
                                 /* @ts-ignore */
-                                <a
-                                    href={selectedProject.video}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center gap-2 px-4 py-2 bg-red-500/20 hover:bg-red-500/30 text-red-400 rounded-lg transition-colors font-medium border border-red-500/20"
-                                >
-                                    <Youtube size={20} /> Watch Demo
-                                </a>
+                                <div className="text-sm bg-white/5 p-3 rounded-lg border border-white/10">
+                                    <div className="text-gray-400 mb-1">Demo Credentials:</div>
+                                    <div className="flex gap-4 text-gray-200">
+                                        {/* @ts-ignore */}
+                                        <span>User: {selectedProject.credentials.email}</span>
+                                        {/* @ts-ignore */}
+                                        <span>Pass: {selectedProject.credentials.password}</span>
+                                    </div>
+                                </div>
                             )}
                         </div>
 
