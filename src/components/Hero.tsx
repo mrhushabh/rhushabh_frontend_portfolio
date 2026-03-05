@@ -6,8 +6,8 @@ export const Hero = () => {
         <section className="min-h-[calc(100vh-80px)] flex flex-col justify-center items-center text-center relative overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0 -z-10 overflow-hidden">
-                <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+                <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse delay-1000" />
             </div>
 
             <motion.div
@@ -24,7 +24,7 @@ export const Hero = () => {
 
                 <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
                     Hi, I'm <span className="text-white">Rhushabh</span><br />
-                    <span className="bg-gradient-to-r from-blue-400 via-teal-400 to-green-400 bg-clip-text text-transparent">
+                    <span className="text-primary">
                         Building Digital Experiences
                     </span>
                 </h1>
@@ -57,15 +57,15 @@ export const Hero = () => {
                 {/* Tech Stack Bubbles */}
                 <div className="pt-20 flex items-center justify-center gap-8 text-gray-500">
                     <div className="flex flex-col items-center gap-2">
-                        <Layout size={24} className="text-blue-400" />
+                        <Layout size={24} className="text-secondary" />
                         <span className="text-xs">Frontend</span>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                        <Code size={24} className="text-teal-400" />
+                        <Code size={24} className="text-secondary" />
                         <span className="text-xs">System</span>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                        <Database size={24} className="text-green-400" />
+                        <Database size={24} className="text-secondary" />
                         <span className="text-xs">Architecture</span>
                     </div>
                 </div>

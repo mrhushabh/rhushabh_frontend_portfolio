@@ -3,16 +3,19 @@
 
 @theme {
   --font-sans: 'Outfit', sans-serif;
-  --color-primary: #3b82f6;
-  --color-secondary: #10b981;
-  --color-dark: #0f172a;
+  --color-primary: #d4af37;
+  /* Metallic Gold */
+  --color-secondary: #f5f5f5;
+  /* Off-white Accent */
+  --color-dark: #09090b;
+  /* Deep Obsidian */
 }
 
 :root {
   font-family: 'Outfit', sans-serif;
   color-scheme: dark;
   background-color: var(--color-dark);
-  color: #f8fafc;
+  color: #f5f5f5;
 }
 
 body {

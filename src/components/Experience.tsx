@@ -64,7 +64,7 @@ export const Experience = () => {
                 className="text-center mb-16"
             >
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Work Experience</h2>
-                <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full" />
+                <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
             </motion.div>
 
             <div className="max-w-4xl mx-auto px-4">
@@ -79,7 +79,7 @@ export const Experience = () => {
                             className="relative pl-8 md:pl-12"
                         >
                             {/* Timeline Dot */}
-                            <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-500 border-4 border-dark" />
+                            <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-dark" />
 
                             <div
                                 className="bg-white/5 border border-white/5 p-6 rounded-2xl hover:bg-white/10 transition-colors cursor-pointer group"
@@ -87,7 +87,7 @@ export const Experience = () => {
                             >
                                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-2">
                                     <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                                        <Briefcase size={18} className="text-blue-400" />
+                                        <Briefcase size={18} className="text-secondary" />
                                         {exp.role}
                                     </h3>
                                     <div className="flex items-center gap-2 text-sm text-gray-400">
@@ -96,12 +96,12 @@ export const Experience = () => {
                                     </div>
                                 </div>
 
-                                <h4 className="text-lg font-medium text-blue-300 mb-3">{exp.company}</h4>
+                                <h4 className="text-lg font-medium text-primary mb-3">{exp.company}</h4>
                                 <p className="text-gray-400 mb-4 leading-relaxed line-clamp-2 md:line-clamp-none">
                                     {exp.summary}
                                 </p>
 
-                                <div className="flex items-center text-blue-400 text-sm font-medium group-hover:translate-x-2 transition-transform">
+                                <div className="flex items-center text-secondary text-sm font-medium group-hover:translate-x-2 transition-transform">
                                     Read More <ChevronRight size={16} />
                                 </div>
                             </div>
@@ -118,7 +118,7 @@ export const Experience = () => {
                 {selectedExp && (
                     <div className="space-y-6">
                         <div>
-                            <h4 className="text-xl font-bold text-blue-300 mb-2">{selectedExp.company}</h4>
+                            <h4 className="text-xl font-bold text-primary mb-2">{selectedExp.company}</h4>
                             <p className="text-gray-400 flex items-center gap-2">
                                 <Calendar size={16} /> {selectedExp.period}
                             </p>
@@ -141,7 +141,7 @@ export const Experience = () => {
                                 {selectedExp.technologies.map((tech) => (
                                     <span
                                         key={tech}
-                                        className="px-3 py-1 text-xs font-medium bg-blue-500/10 text-blue-300 rounded-full border border-blue-500/20"
+                                        className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20"
                                     >
                                         {tech}
                                     </span>

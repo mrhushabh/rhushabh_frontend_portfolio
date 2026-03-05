@@ -45,7 +45,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }
                         <div className="bg-dark border border-white/10 rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto pointer-events-auto shadow-2xl relative flex flex-col">
                             {/* Header */}
                             <div className="flex items-center justify-between p-6 border-b border-white/10 sticky top-0 bg-dark/95 backdrop-blur z-10">
-                                <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
+                                <h3 className="text-2xl font-bold text-primary">
                                     {title}
                                 </h3>
                                 <button

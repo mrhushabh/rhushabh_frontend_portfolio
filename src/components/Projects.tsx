@@ -39,14 +39,12 @@ const projects = [
     {
         id: 3,
         title: 'ChatDB',
-        summary: 'NLP to SQL/NoSQL translator using Python/Flask and Flutter.',
+        summary: 'NLP to SQL/NoSQL translator using Python/Flask and React Native.',
         details: [
-            'Devised a Python-based system using NLTK to translate natural language into SQL and NoSQL queries, reducing query creation time by 50%.',
-            'Integrated MySQL and MongoDB with natural language parsing and query execution workflows.',
-            'Supported operations like SELECT, GROUP BY, and conditional filters, achieving 30% faster execution.',
-            'Developed a Flutter mobile app for intuitive query input, displaying the generated query, and enabling real-time execution.'
+            'Built a Python NLP engine (NLTK) that converts natural-language questions into SQL/NoSQL queries.',
+            'Developed an Android-first mobile app in React Native for query input and results viewing; integrated with a Flask backend to generate queries and enable real-time execution with database result visualization.'
         ],
-        tech: ['Python', 'Flask', 'NLP', 'Flutter', 'Dart', 'MySQL', 'MongoDB'],
+        tech: ['Python', 'Flask', 'NLP', 'React Native', 'Android', 'MySQL', 'MongoDB'],
         github: '',
         demo: '#',
         image: 'https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -84,7 +82,7 @@ export const Projects = () => {
                 className="text-center mb-16"
             >
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
-                <div className="w-20 h-1 bg-teal-500 mx-auto rounded-full" />
+                <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
@@ -114,7 +112,7 @@ export const Projects = () => {
                         <div className="p-6">
                             <div className="flex justify-between items-start mb-4">
                                 <div className="flex items-center gap-2">
-                                    <Folder className="text-teal-400" size={20} />
+                                    <Folder className="text-secondary" size={20} />
                                     <h3 className="text-xl font-bold">{project.title}</h3>
                                 </div>
                             </div>
@@ -122,7 +120,7 @@ export const Projects = () => {
                             <p className="text-gray-400 mb-6 line-clamp-2">{project.summary}</p>
 
                             <div className="flex items-center justify-between mt-auto">
-                                <div className="text-teal-400 text-sm font-medium flex items-center gap-1 group-hover:translate-x-2 transition-transform">
+                                <div className="text-secondary text-sm font-medium flex items-center gap-1 group-hover:translate-x-2 transition-transform">
                                     View Details <ChevronRight size={16} />
                                 </div>
                             </div>
@@ -164,7 +162,7 @@ export const Projects = () => {
                                         href={selectedProject.demo}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 px-4 py-2 bg-teal-500/20 hover:bg-teal-500/30 text-teal-400 rounded-lg transition-colors font-medium border border-teal-500/20"
+                                        className="flex items-center gap-2 px-4 py-2 bg-primary/20 hover:bg-primary/30 text-primary rounded-lg transition-colors font-medium border border-primary/20"
                                     >
                                         <ExternalLink size={20} /> Live Demo
                                     </a>
@@ -177,7 +175,7 @@ export const Projects = () => {
                                         href={selectedProject.video}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 px-4 py-2 bg-red-500/20 hover:bg-red-500/30 text-red-400 rounded-lg transition-colors font-medium border border-red-500/20"
+                                        className="flex items-center gap-2 px-4 py-2 bg-secondary/20 hover:bg-secondary/30 text-secondary rounded-lg transition-colors font-medium border border-secondary/20"
                                     >
                                         <Youtube size={20} /> Watch Demo
                                     </a>
@@ -214,7 +212,7 @@ export const Projects = () => {
                             <h5 className="font-semibold text-lg text-white mb-3">Technologies</h5>
                             <div className="flex flex-wrap gap-2">
                                 {selectedProject.tech.map((t) => (
-                                    <span key={t} className="px-3 py-1 text-xs font-medium bg-teal-500/10 text-teal-300 rounded-full border border-teal-500/20">
+                                    <span key={t} className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20">
                                         {t}
                                     </span>
                                 ))}
