@@ -19,7 +19,7 @@ const projects = [
         github: 'https://github.com/mrhushabh',
         demo: 'https://stockplay.onrender.com/search',
         video: 'https://www.youtube.com/watch?v=F8raFihjc6c',
-        image: 'https://images.unsplash.com/photo-1642790551116-18e150f248e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1642790106117-e829e14a795f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
         id: 2,
@@ -34,7 +34,7 @@ const projects = [
         tech: ['C#', 'Unity', 'Firebase'],
         github: 'https://github.com/CSCI-526-Spring-2025/csci-526-final-project-putter-pirates',
         demo: 'https://csci-526-spring-2025.github.io/csci-526-final-project-putter-pirates/BetaBuild2/',
-        image: 'https://images.unsplash.com/photo-1593118247619-e2d6f056869e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
         id: 3,
@@ -47,7 +47,7 @@ const projects = [
         tech: ['Python', 'Flask', 'NLP', 'React Native', 'Android', 'MySQL', 'MongoDB'],
         github: '',
         demo: '#',
-        image: 'https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
         id: 4,
@@ -62,7 +62,7 @@ const projects = [
         tech: ['React', 'TypeScript', 'Node.js', 'Prisma', 'Tailwind', 'Recharts'],
         github: 'https://github.com/mrhushabh/ApplyFlow',
         demo: 'https://apply-flow-mauve.vercel.app/',
-        image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         credentials: {
             email: 'demo@example.com',
             password: 'password'
