@@ -7,8 +7,20 @@ const experiences = [
     {
         id: 1,
         role: 'Software Developer',
+        company: 'Easley-Dunn Productions, Inc.',
+        period: 'Feb 2026 - Present',
+        summary: 'Established real-time analytics tracking using Firebase and Unity, and built Python-based data pipelines.',
+        details: [
+            'Established real-time analytics tracking by embedding Firebase database calls within Unity C# scripts, dynamically updating player behavior data and in-game events to generate actionable insights for continuous gameplay improvement.',
+            'Built Python-based analytics pipelines to convert data into actionable graphs and metrics, accelerating decision-making by 10×.'
+        ],
+        technologies: ['Unity', 'C#', 'Firebase', 'Python']
+    },
+    {
+        id: 2,
+        role: 'Software Developer',
         company: 'University of Southern California',
-        period: 'May 2024 - Present',
+        period: 'May 2024 - Dec 2025',
         summary: 'Architected full-stack dashboards and led integration log tracker development.',
         details: [
             'Led a Team to develop a real-time AssetWorks–Workday integration log tracker, reducing issue resolution time by 40%.',
@@ -22,7 +34,7 @@ const experiences = [
         technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'AWS', 'Python']
     },
     {
-        id: 2,
+        id: 3,
         role: 'Software Developer Intern',
         company: 'Hudson Advisors L.P.',
         period: 'May 2025 - Aug 2025',
@@ -36,7 +48,7 @@ const experiences = [
         technologies: ['Go', 'Gin', 'AWS ECS', 'REST', 'gRPC']
     },
     {
-        id: 3,
+        id: 4,
         role: 'Software Engineering Intern',
         company: 'PTC.Inc',
         period: 'Jul 2022 - Jun 2023',

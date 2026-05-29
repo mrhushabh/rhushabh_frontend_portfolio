@@ -51,6 +51,21 @@ const projects = [
     },
     {
         id: 4,
+        title: 'AI Chat App',
+        summary: 'AI-powered iOS chat app with real-time SSE streaming and Supabase backend.',
+        details: [
+            'Built real-time SSE streaming with progressive text rendering and stream cancellation using Swift Concurrency.',
+            'Backend built on Supabase with Edge Functions, Postgres migrations, and Row Level Security.',
+            'Integrated Gemini API for streaming chat responses and AI-powered conversation summarization.'
+        ],
+        tech: ['Swift', 'SwiftUI', 'Supabase', 'Gemini API', 'PostgreSQL', 'Edge Functions'],
+        github: 'https://github.com/mrhushabh/Interview-Assignment',
+        demo: '#',
+        video: 'https://www.youtube.com/watch?v=qV8aeACZUmI',
+        image: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    },
+    {
+        id: 5,
         title: 'ApplyFlow',
         summary: 'Full-stack job application tracker with Kanban board and real-time analytics.',
         details: [

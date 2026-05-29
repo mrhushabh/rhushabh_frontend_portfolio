@@ -59,7 +59,7 @@ export const Contact = () => {
                             </div>
                             <div>
                                 <p className="text-sm text-gray-400">Location</p>
-                                <p className="font-medium">Los Angeles, USA</p>
+                                <p className="font-medium">San Jose, USA</p>
                             </div>
                         </div>
                     </div>
